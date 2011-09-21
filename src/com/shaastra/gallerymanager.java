@@ -5,22 +5,24 @@ public final class gallerymanager {
 	
 	public static final Integer[] catIds={R.drawable.impact,R.drawable.design,R.drawable.coding,R.drawable.involve,R.drawable.dept,R.drawable.spotlight,R.drawable.exhi,R.drawable.quiz,R.drawable.gradient,R.drawable.exhi,R.drawable.involve};
 	public static final Integer[] imageIDs = {
- R.drawable.dept, R.drawable.dept, R.drawable.dept, R.drawable.dept, R.drawable.dept,R.drawable.dept,R.drawable.dept,
- R.drawable.design,R.drawable.design,R.drawable.design,R.drawable.design,R.drawable.design,R.drawable.design,R.drawable.design,
- R.drawable.involve,R.drawable.involve,R.drawable.involve,R.drawable.involve,R.drawable.involve,R.drawable.involve,R.drawable.involve,R.drawable.involve,R.drawable.involve,
+		R.drawable.wright, R.drawable.biomodelling, R.drawable.chemtrek, R.drawable.infrafest, R.drawable.codemorphing,R.drawable.desmod,R.drawable.scdc,
+		 R.drawable.robotics,R.drawable.robowars,R.drawable.contraption,R.drawable.junkyardwars,R.drawable.projectx,R.drawable.firenice,R.drawable.pentathlon,
+		 R.drawable.chemx,R.drawable.dailyevents,R.drawable.writing,R.drawable.involve,R.drawable.puzzlechamp,R.drawable.cubeopen,R.drawable.wattsup,R.drawable.iq,R.drawable.mathmodelling,
  //aerofest
- R.drawable.involve,R.drawable.involve,R.drawable.involve,R.drawable.involve,
- R.drawable.spotlight,R.drawable.spotlight,R.drawable.spotlight,R.drawable.spotlight,R.drawable.spotlight,R.drawable.spotlight,
- R.drawable.quiz,R.drawable.quiz,R.drawable.quiz,
- R.drawable.coding,R.drawable.coding,R.drawable.coding,R.drawable.coding,R.drawable.coding,R.drawable.coding,R.drawable.coding,R.drawable.coding,
- R.drawable.exhi,R.drawable.exhi,R.drawable.exhi,R.drawable.exhi,R.drawable.exhi,R.drawable.exhi,R.drawable.exhi,R.drawable.exhi,
+		 R.drawable.aerobotics,R.drawable.topgun,R.drawable.airshow,R.drawable.paperplane,
+		 R.drawable.gamersinn,R.drawable.maze,R.drawable.bullsandbears,R.drawable.paper,R.drawable.lecturesandvcs,R.drawable.idp,
+		 R.drawable.smq,R.drawable.htw,R.drawable.autoquiz,
+
+ R.drawable.automania,R.drawable.babel,R.drawable.opc,R.drawable.distro,R.drawable.simchamp,R.drawable.hackfest,R.drawable.datamining,R.drawable.codeobfuscation,
+ R.drawable.ethicalhacking,R.drawable.innovationeer,R.drawable.astronomyworkshop,R.drawable.nanomaterial,R.drawable.forensics,R.drawable.fossils,R.drawable.android,R.drawable.digitalcircuits,
 //online
- R.drawable.gradient,R.drawable.gradient,R.drawable.gradient,R.drawable.gradient,R.drawable.gradient,R.drawable.gradient,R.drawable.gradient,
+ R.drawable.estockbazaar,R.drawable.onlinemath,R.drawable.onlinepuzzlechamp,R.drawable.onlinequiz,R.drawable.onlinekryptx,R.drawable.onlinekryptx,R.drawable.android,
+
+ R.drawable.industrial,R.drawable.gov,R.drawable.industrial,R.drawable.exhi,R.drawable.shaastranights,
+R.drawable.symposium,R.drawable.impact,R.drawable.impact,R.drawable.impact,
+R.drawable.writing,
 //workshops
- R.drawable.exhi,R.drawable.exhi,R.drawable.exhi,R.drawable.exhi,R.drawable.exhi,
-R.drawable.impact,R.drawable.impact,R.drawable.impact,R.drawable.impact,
-R.drawable.gradient,//workshops
-R.drawable.exhi
+R.drawable.gradient
         };
 	public static final Integer[][] eventids  = {
         {65,66,67,68},

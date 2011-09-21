@@ -36,7 +36,7 @@ public class SegmentedControlButton extends RadioButton {
         Paint textPaint = new Paint();
         textPaint.setAntiAlias(true);
         float currentWidth = textPaint.measureText(text);
-        float currentHeight = textPaint.measureText("x");
+        float currentHeight = textPaint.measureText("x")-3.0f;
         
 
         // final float scale =

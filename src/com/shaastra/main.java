@@ -78,64 +78,64 @@ private DisplayMetrics metrics;
 		 e=new EventAdapter(this,1);
 		 gallery.setAdapter(e); 
 		 gallery.setOnItemClickListener((OnItemClickListener) new GalleryClickListener(1, this));
-		 gallery.setSelection(1);
+		 
 		 alignGallery(gallery);
 		 
 		 gallery = (SlowGallery) findViewById(R.id.gallery3);
 		 e=new EventAdapter(this,2);
 		 gallery.setAdapter(e); 
 		 gallery.setOnItemClickListener((OnItemClickListener) new GalleryClickListener(2, this));
-		 gallery.setSelection(1);
+		 
 		 alignGallery(gallery);
 		 gallery = (SlowGallery) findViewById(R.id.gallery4);
 		 e=new EventAdapter(this,3);
 		 gallery.setAdapter(e); 
 		 
 		 gallery.setOnItemClickListener((OnItemClickListener) new GalleryClickListener(3, this));
-		 gallery.setSelection(1);
+		  
 		 alignGallery(gallery);
 		 gallery = (SlowGallery) findViewById(R.id.gallery5);
 		 e=new EventAdapter(this,4);
 		 gallery.setAdapter(e); 
 		 gallery.setOnItemClickListener((OnItemClickListener) new GalleryClickListener(4, this));
-		 gallery.setSelection(1);
+		  
 		 alignGallery(gallery);
 		 gallery = (SlowGallery) findViewById(R.id.gallery6);
 		 e=new EventAdapter(this,5);
 		 gallery.setAdapter(e); 
-		 gallery.setSelection(1);
+		  
 		 gallery.setOnItemClickListener((OnItemClickListener) new GalleryClickListener(5, this));
 		 alignGallery(gallery);
 		 gallery = (SlowGallery) findViewById(R.id.gallery7);
 	 e=new EventAdapter(this,6);
 		 gallery.setAdapter(e); 	
 		 gallery.setOnItemClickListener((OnItemClickListener) new GalleryClickListener(6, this));
-		 gallery.setSelection(1);
+		  
 		 alignGallery(gallery);
 		 gallery = (SlowGallery) findViewById(R.id.gallery8);
 		 e=new EventAdapter(this,7);
 		 gallery.setAdapter(e); 
 		 gallery.setOnItemClickListener((OnItemClickListener) new GalleryClickListener(7, this));
-		 gallery.setSelection(1);
+		  
 		 alignGallery(gallery);
 		
 		 gallery = (SlowGallery) findViewById(R.id.gallery9);
 		 e=new EventAdapter(this,8);
 		 gallery.setAdapter(e); 
 		 gallery.setOnItemClickListener((OnItemClickListener) new GalleryClickListener(8, this));
-		 gallery.setSelection(1);
+		  
 		 alignGallery(gallery);
 		 gallery = (SlowGallery) findViewById(R.id.gallerya);
 		 e=new EventAdapter(this,9);
 		 gallery.setAdapter(e);
 		 gallery.setOnItemClickListener((OnItemClickListener) new GalleryClickListener(9, this));
-		 gallery.setSelection(1);
+		  
 		 alignGallery(gallery);//gallery.setAdapter(e); 
 	 gallery = (SlowGallery) findViewById(R.id.galleryb);
 		 e=new EventAdapter(this,10);
 		 gallery.setAdapter(e); 
 		 gallery.setOnItemClickListener((OnItemClickListener) new GalleryClickListener(10, this));
-		 gallery.setSelection(1);
+		  
 		 alignGallery(gallery);
 		 
     }
