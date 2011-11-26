@@ -36,7 +36,8 @@ R.drawable.gradient
         {53,54,55,56,57,58,69},
         {45,46,47,48,49,50,51,52,70},
         {24,25,26,27}
-       };	
+       };
+
 	public static final HashMap<Integer, String> eventNameHash = new HashMap<Integer, String>();
 	static {
 	eventNameHash.put(1," Wright Design "); 
@@ -110,7 +111,79 @@ R.drawable.gradient
 	eventNameHash.put(69," Online Sci-Fi Writing "); 
 	eventNameHash.put(70," Parallel Programming Workshop "); 
 	}
-	
+	public static final HashMap<Integer, Integer> hackHash = new HashMap<Integer, Integer>();
+	static{
+		hackHash.put(1, 63);
+		hackHash.put(2, 43);
+		hackHash.put(3, 44);
+		hackHash.put(4, 42);
+		hackHash.put(5,41);
+		hackHash.put(6,40);
+		hackHash.put(7,39);
+		hackHash.put(8,17);
+		hackHash.put(9,13);
+		hackHash.put(10,14);
+		hackHash.put(11, 16);
+		hackHash.put(12,18);
+		hackHash.put(13,15);
+		hackHash.put(14,19);
+		hackHash.put(15,20);
+		hackHash.put(16,21);
+		hackHash.put(17,23);
+		hackHash.put(18,24);
+		hackHash.put(19,26);
+		hackHash.put(20,27);
+		hackHash.put(21,28);
+		hackHash.put(22,22);
+		hackHash.put(23,29);
+		hackHash.put(24,1);
+		hackHash.put(25,2);
+		hackHash.put(26, 3);
+		hackHash.put(27,4);
+		hackHash.put(28, 62);
+		hackHash.put(29, 64);
+		hackHash.put(30, 60);
+		hackHash.put(31, 65);
+		hackHash.put(33, 66);
+		hackHash.put(32, 67);
+		hackHash.put(34,68);
+		hackHash.put(35, 69);
+		hackHash.put(36,70);
+		hackHash.put(37, 5);
+		hackHash.put(38, 6);
+		hackHash.put(39, 7);
+		hackHash.put(40, 8);
+		hackHash.put(41, 9);
+		hackHash.put(42, 10);
+		hackHash.put(43, 11);
+		hackHash.put(44, 12);
+		hackHash.put(45,46);
+		hackHash.put(46, 47);
+		hackHash.put(47, 48);
+		hackHash.put(48, 49);
+		hackHash.put(49, 50);
+		hackHash.put(50, 51);
+		hackHash.put(51, 52);
+		hackHash.put(52, 53);
+		hackHash.put(53,71 );
+		hackHash.put(54,72);
+		hackHash.put(55, 73);
+		hackHash.put(56,74);
+		hackHash.put(57,75);
+		hackHash.put(58, 76);
+		hackHash.put(59, 23);
+		hackHash.put(60, 77);
+		hackHash.put(61,78);
+		hackHash.put(62, 79);
+		hackHash.put(63, 80);
+		hackHash.put(64, 81);
+		hackHash.put(65, 82);
+		hackHash.put(66, 83);
+		hackHash.put(67, 84);
+		hackHash.put(68, 85);
+		hackHash.put(69, 25);
+		hackHash.put(70, 54);
+	}
 
 
 }

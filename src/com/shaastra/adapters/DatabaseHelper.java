@@ -20,13 +20,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	
 
 	private static String DB_PATH = "/data/data/com.shaastra/databases/";
-	private static String DB_NAME = "quicktabs";
+	private static String DB_NAME = "test.db";
 	private static String TAG = "Databasehelper";
-	private static String TABLE_NAME = "events_quicktabs";
-	private static String KEY_EVENT_ID = "event_id";
-	private static String TITLE = "title";
-	private static String DESCRIPTION = "text";
-	private static String KEY_ID = "_id";
+	private static String TABLE_NAME = "events";
+	private static String KEY_EVENT_ID = "_id";
+	private static String NAME = "name";
+	private static String DESCRIPTION = "desc";
+	private static String INTRODUCTION = "introduction";
+	private static String PRIZE = "prize";
+	
     private SQLiteDatabase myDatabase; 
     private final Context myContext;
     
@@ -73,7 +75,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	 
 	    	}catch(SQLiteException e){
 	 
-	    		//database does't exist yet.
+	    		Log.e("database",e.toString());
 	 
 	    	}
 	 
@@ -154,9 +156,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 	        Cursor mCursor =
 
-	                myDatabase.query(true, TABLE_NAME, new String[] {KEY_EVENT_ID,TITLE,
-	                        DESCRIPTION}, KEY_EVENT_ID + "=" + eventId, null,
-	                        null, null, KEY_ID, null);
+	                myDatabase.query(true, TABLE_NAME, new String[] {KEY_EVENT_ID,NAME,
+	                        DESCRIPTION,INTRODUCTION,PRIZE}, KEY_EVENT_ID + "=" + eventId, null,
+	                        null, null,null, null);
 	        if (mCursor != null) {
 	            mCursor.moveToFirst();
 	        }
@@ -168,15 +170,55 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		   Long id = Long.valueOf(eventId);
 	        Cursor mCursor =
 
-	                myDatabase.query(TABLE_NAME, new String[] {KEY_EVENT_ID,TITLE,
-	                        DESCRIPTION}, KEY_EVENT_ID+"= ? AND "+TITLE+"= ?",new String[]{id.toString(),title},
-	                         null,null, KEY_ID);
+	                myDatabase.query(TABLE_NAME, new String[] {KEY_EVENT_ID,NAME,
+	                        DESCRIPTION}, KEY_EVENT_ID+"= ? AND "+NAME+"= ?",new String[]{id.toString(),title},
+	                         null,null,null);
 	        if (mCursor != null) {
 	            mCursor.moveToFirst();
 	        }
 	        return mCursor;
 
 	    }
+	   
+	   public Cursor fetchCordDetails(long eventId) throws SQLException{
+		   Cursor mCursor;
+		   if(eventId!=0){
+		   Long id = Long.valueOf(eventId);
+		  
+		   mCursor =myDatabase.query("Coordinators", new String[]{"_id","name","phone","eventid"}, "eventid= ?", new String[]{id.toString()}, null, null,null);
+		   if(mCursor!=null){
+			   mCursor.moveToFirst();
+		   }
+		   }
+		   else{
+			   mCursor =myDatabase.query("Coordinators", new String[]{"_id","name","phone","eventid"}, null,null, null, null,null);
+			   if(mCursor!=null){
+				   mCursor.moveToFirst();
+			   }
+		   }
+		   return mCursor;
+	   }
+	   
+	   public Cursor fetchAllCords() throws SQLException{
+		   Cursor mCursor;
+		   
+		   mCursor =myDatabase.query("coords", new String[]{"_id","name","phone","dept"},null,null, null, null,null);
+		   if(mCursor!=null){
+			   mCursor.moveToFirst();
+		   }
+		   
+		  
+		   return mCursor;
+	   }
+	   
+	   public Cursor fetchCords(String search) throws SQLException{
+		   Cursor mCursor;
+		   mCursor = myDatabase.query("coords", new String[]{"_id","name","phone","dept"},"name like ? or dept like ?", new String[]{"%"+search+"%","%"+search+"%"},null,null,null);
+		   if(mCursor!=null){
+			   mCursor.moveToFirst();
+		   }
+		   return mCursor;
+	   }
 
 	
 	

@@ -88,27 +88,50 @@
        	
        		
        		
-       		<HorizontalScrollView
-       		android:layout_height="wrap_content"
-       		android:layout_width="fill_parent"
-       		android:layout_below="@id/linearLayout2"
-       		android:background="#000000"
-       		android:id="@+id/SegmentedScrollView"
-       		>
-       		<RadioGroup
+       		
+       		<LinearLayout
        		android:layout_height = "wrap_content"
-       		android:layout_width = "wrap_content"
+       		android:layout_width = "fill_parent"
        		android:orientation = "horizontal"
        		android:id="@+id/segmented_control"
+       		android:layout_below = "@id/linearLayout2"
        		
-       		/>
-       		</HorizontalScrollView> 
+       		
+       		>
+       		<Button
+       		android:layout_weight="1"
+       		android:layout_height="wrap_content"
+       		android:layout_width = "wrap_content"
+       		android:id="@+id/intro"
+       		android:text="Introduction"
+       		android:background="@drawable/bluebutton"
+       		style="@style/ButtonText">
+       		</Button>
+       		<Button
+       		android:layout_weight="1"
+       		android:layout_height="wrap_content"
+       		android:layout_width = "wrap_content"
+       		android:id="@+id/eventFormat"
+       		android:text="Event Format"
+       		android:background="@drawable/bluebutton"
+       		style="@style/ButtonText">>
+       		</Button>
+       		</LinearLayout>
+       		<TextView
+       		android:id="@+id/introLabel"
+       		android:layout_below="@id/segmented_control"
+       		android:layout_height="wrap_content"
+       		android:layout_width="fill_parent"
+       		android:text="Introduction"
+       		style ="@style/TextLabel"
+       		
+       		></TextView>
        		<ScrollView                                                                         
                       android:id="@+id/vert"
                       android:layout_width="fill_parent"
                       android:layout_height="wrap_content"
                       android:scrollbars="vertical"
-                      android:layout_below="@id/SegmentedScrollView">
+                      android:layout_below="@id/introLabel">
        		 <TextView android:id="@+id/eventDescription"
        		android:layout_width="wrap_content"
        		android:layout_height="wrap_content"

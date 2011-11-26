@@ -2,4 +2,6 @@
 <resources>
     <string name="hello">Hello World</string>
     <string name="app_name">Shaastra 2011</string>
+    <string name="search_hint">Enter name or dept for search</string>
+    <string name="search_label">search</string>
 </resources>
